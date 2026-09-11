@@ -1,0 +1,37 @@
+name: アプリのサポート
+description: Family Health Timelineの不具合や操作方法を問い合わせる
+title: "[サポート] "
+labels: [support]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **氏名、症状、体温、薬の名称、お薬手帳や画面の画像など、健康情報・個人情報は記載しないでください。**
+        このIssueは公開されます。
+  - type: input
+    id: app-version
+    attributes:
+      label: アプリのバージョン
+      placeholder: 例：1.0.0
+    validations:
+      required: true
+  - type: input
+    id: ios-version
+    attributes:
+      label: iOSのバージョン
+      placeholder: 例：26.0
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 問題が起きるまでの操作
+      description: 個人情報や健康情報を含めずに記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待していた動作
+    validations:
+      required: true
